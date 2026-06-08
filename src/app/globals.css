@@ -167,6 +167,32 @@
 }
 
 /* ============================================================================
+   Cable Configurator — scoped utilities
+   ============================================================================ */
+
+/* animate-in helpers used by connector / label reveal panels */
+@layer utilities {
+  .animate-in {
+    animation-fill-mode: both;
+  }
+  .fade-in {
+    animation-name: fadeIn;
+  }
+  .slide-in-from-top-2 {
+    --tw-enter-translate-y: -0.5rem;
+    animation-name: slideInFromTop;
+  }
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  @keyframes slideInFromTop {
+    from { opacity: 0; transform: translateY(var(--tw-enter-translate-y, 0)); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+}
+
+/* ============================================================================
    .blog-body — Prose styles for rich HTML content
    Used by: product descriptions, blog posts, CMS pages
    ============================================================================ */

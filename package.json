@@ -21,7 +21,7 @@
   ],
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "scripts/dev-watchdog.sh",
     "build": "next build",
     "start": "next start",
     "lint": "eslint",

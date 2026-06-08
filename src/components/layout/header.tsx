@@ -140,8 +140,9 @@ export function Header({ categories = [] }: HeaderProps) {
         </Sheet>
 
         {/* Logo */}
-        <Link href="/" className="text-xl font-semibold tracking-tight">
-          {siteConfig.name}
+        <Link href="/" className="shrink-0 flex items-center">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/logo.svg" alt="RigCables" className="h-[38px] w-auto" />
         </Link>
 
         {/* Desktop nav */}

@@ -5,8 +5,8 @@
 
 export const siteConfig = {
   // Branding
-  name: "Next.js Ecommerce Starter",
-  tagline: "A free, open-source Next.js ecommerce template.",
+  name: "RigCables",
+  tagline: "Hand-assembled RF cables built to your exact spec.",
   description:
     "A free, production-ready Next.js ecommerce starter template built with Tailwind CSS and shadcn/ui. Responsive, accessible, SEO optimized, and ready to connect to any checkout system. Built by Epic Design Labs.",
 

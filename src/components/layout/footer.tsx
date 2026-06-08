@@ -44,6 +44,7 @@ function IconTikTok({ className }: { className?: string }) {
 
 const footerLinks = {
   shop: [
+    { name: "Custom Cables", href: "/build" },
     { name: "All Products", href: "/shop" },
     { name: "All Brands", href: "/brands" },
     { name: "New Arrivals", href: "/shop?sort=newest" },
@@ -70,8 +71,9 @@ export function Footer() {
         <div className="grid grid-cols-2 gap-8 md:grid-cols-5">
           {/* Brand */}
           <div className="col-span-2">
-            <Link href="/" className="text-xl font-semibold tracking-tight">
-              {siteConfig.name}
+            <Link href="/" className="inline-block">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="/logo.svg" alt="RigCables" className="h-10 w-auto" />
             </Link>
             <p className="mt-4 text-sm text-muted-foreground">
               {siteConfig.tagline}
