@@ -32,7 +32,7 @@ export default function HomePage() {
               headline: "Times Microwave & Amphenol",
               body: "Times Microwave and Amphenol products aren't just a collection — they're a testament to uncompromising excellence in RF connectivity.",
               cta: "Shop Now",
-              href: "/times-microwave-lmr",
+              href: "/shop",
             },
             {
               img: "/images/feature-custom-assemblies.jpg",
@@ -48,7 +48,7 @@ export default function HomePage() {
               headline: "DC Power",
               body: "RigCables sells premium DC cable by the foot and Powerpole® products and tools.",
               cta: "Shop Now",
-              href: "/dc-power",
+              href: "/shop",
             },
           ].map(({ img, alt, headline, body, cta, href }) => (
             <div key={headline} className="relative flex flex-1 flex-col justify-end min-h-[400px] xl:min-h-[600px] overflow-hidden">
