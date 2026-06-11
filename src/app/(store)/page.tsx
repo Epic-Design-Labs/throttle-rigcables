@@ -50,9 +50,9 @@ export default function HomePage() {
               cta: "Shop Now",
               href: "/shop",
             },
-          ].map(({ img, alt, headline, body, cta, href }) => (
+          ].map(({ img, alt, headline, body, cta, href }, i) => (
             <div key={headline} className="relative flex flex-1 flex-col justify-end min-h-[400px] xl:min-h-[600px] overflow-hidden">
-              <Image src={img} alt={alt} fill className="object-cover" sizes="(max-width: 768px) 100vw, 33vw" />
+              <Image src={img} alt={alt} fill className="object-cover" sizes="(max-width: 768px) 100vw, 33vw" priority={i === 0} />
               {/* flat uniform 43% black overlay — matches live site */}
               <div className="absolute inset-0 bg-black/[0.43]" />
               <div className="relative z-10 p-6 md:p-10 text-center text-white">
@@ -153,7 +153,7 @@ export default function HomePage() {
               </span>
               <h3 className="text-[#0F172B] text-lg font-semibold leading-snug">{label}</h3>
               <p className="text-[#45556C] text-sm leading-relaxed">{desc}</p>
-              <Link href={href} className="text-[#0A0A0A] text-[15px] font-medium mt-auto">
+              <Link href={href} aria-label={`Learn more about ${label}`} className="text-[#0A0A0A] text-[15px] font-medium mt-auto">
                 Learn More
               </Link>
             </div>
